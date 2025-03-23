@@ -1,0 +1,50 @@
+@import "tailwindcss";
+body {
+  @apply bg-gray-50 text-gray-800;
+  font-family: "Inter", sans-serif;
+}
+
+/* Main Container */
+.container {
+  @apply mx-auto px-4 sm:px-8 lg:px-16 py-12;
+}
+
+/* Heading */
+h1 {
+  @apply text-5xl font-extrabold text-center text-blue-600 mb-8;
+}
+
+/* URL Form Styles */
+.form-container {
+  @apply bg-white shadow-lg rounded-lg p-6 mb-8 w-full max-w-lg;
+}
+
+input[type="text"] {
+  @apply w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+button {
+  @apply bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition duration-300;
+}
+
+/* URL List Styles */
+.url-list {
+  @apply space-y-4;
+}
+
+.url-item {
+  @apply bg-white shadow-md rounded-lg p-4 flex justify-between items-center;
+}
+
+.url-item a {
+  @apply text-blue-500 hover:underline;
+}
+
+.url-item button {
+  @apply text-red-500 hover:text-red-600;
+}
+
+/* Footer Styles */
+.footer {
+  @apply text-center text-sm text-gray-500 mt-8;
+}
